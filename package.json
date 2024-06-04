@@ -1,0 +1,15 @@
+{
+  "name": "2024_hex_school",
+  "version": "1.0.0",
+  "description": "練習 flex",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
