@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>作品集</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/2f8d8c7a6133b448ecff5bf0a3d282b87b7c6a7e/2024%20web-camp/logo.svg"
+            alt=""
+          />
+        </div>
+        <button type="button" class="navbar-btn">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+        <ul class="navbar">
+          <li class="menu">
+            <a href="#">首頁</a>
+            <span class="border-box border-left-top"></span>
+            <span class="border-box border-left-bottom"></span>
+            <span class="border-box border-right-top"></span>
+            <span class="border-box border-right-bottom"></span>
+          </li>
+          <li class="menu">
+            <a href="#">作品集</a>
+            <span class="border-box border-left-top"></span>
+            <span class="border-box border-left-bottom"></span>
+            <span class="border-box border-right-top"></span>
+            <span class="border-box border-right-bottom"></span>
+          </li>
+          <li class="menu">
+            <a href="#">服務項目</a
+            ><span class="border-box border-left-top"></span>
+            <span class="border-box border-left-bottom"></span>
+            <span class="border-box border-right-top"></span>
+            <span class="border-box border-right-bottom"></span>
+          </li>
+          <li class="menu">
+            <a href="#">部落格</a
+            ><span class="border-box border-left-top"></span>
+            <span class="border-box border-left-bottom"></span>
+            <span class="border-box border-right-top"></span>
+            <span class="border-box border-right-bottom"></span>
+          </li>
+          <li class="menu">
+            <a href="#">聯絡我</a
+            ><span class="border-box border-left-top"></span>
+            <span class="border-box border-left-bottom"></span>
+            <span class="border-box border-right-top"></span>
+            <span class="border-box border-right-bottom"></span>
+          </li>
+        </ul>
+      </header>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    $(".navbar-btn").click(() => {
+      $(".navbar").toggleClass("active");
+    });
+  </script>
+</html>
