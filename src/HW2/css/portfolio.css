@@ -58,7 +58,7 @@
   bottom: 0;
 }
 
-.content {
+.title-content {
   width: 636px;
   display: flex;
   gap: 40px;
@@ -89,7 +89,7 @@
 }
 
 @media (max-width: 768px) {
-  .content {
+  .title-content {
     display: flex;
     flex-wrap: wrap;
   }
