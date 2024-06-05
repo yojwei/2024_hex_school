@@ -1,0 +1,104 @@
+.title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fafafa;
+  padding: 80px;
+}
+
+.quote-left {
+  margin-right: auto;
+}
+
+.quote-right {
+  margin-left: auto;
+}
+
+.slogan {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.slogan-content {
+  width: 670px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slogan img {
+  width: 72px;
+  height: 72px;
+}
+
+.slogan p {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 400;
+}
+
+.slogan-content p:nth-child(odd) {
+  padding-bottom: 40px;
+}
+
+.underline {
+  position: relative;
+  margin-left: -8px;
+}
+
+.underline-1::after {
+  position: absolute;
+  content: "";
+  width: 148px;
+  height: 8px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true");
+  left: 0;
+  bottom: 0;
+}
+
+.content {
+  width: 636px;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+.card {
+  width: 50%;
+}
+
+.card-title {
+  color: #5b5b5b;
+  margin-bottom: 4px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.card-title::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  top: 30px;
+  left: calc(100% / 2 - 15px);
+  background-color: #c1c1c1;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+}
