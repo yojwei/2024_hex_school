@@ -88,6 +88,91 @@
   position: absolute;
 }
 
+.content {
+  padding: 80px;
+}
+
+.content img {
+  width: 636px;
+  height: 400px;
+}
+
+.content .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.content .card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .card-title {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content .card-body {
+  margin-top: 16px;
+  text-align: left;
+}
+
+.content .subtitle {
+  font-size: 28px;
+  line-height: 33.6px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.content .description {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #919191;
+}
+
+.content .hashtag {
+  display: flex;
+  gap: 10px;
+}
+
+.content .tag {
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3b3b3b;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.paginator {
+  width: 40px;
+  height: 40px;
+  padding: 2px 13px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.page .active {
+  color: white;
+  background-color: black;
+}
+
 @media (max-width: 768px) {
   .title-content {
     display: flex;
@@ -100,5 +185,39 @@
 
   .header .card-body {
     padding: 20px;
+  }
+
+  .content img {
+    width: 351px;
+    height: 224px;
+  }
+
+  .content .subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .page {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .paginator {
+    width: 40px;
+    height: 40px;
+    padding: 2px 13px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    font-weight: 400;
+  }
+
+  .page .active {
+    color: white;
+    background-color: black;
   }
 }
