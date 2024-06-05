@@ -67,18 +67,18 @@
   line-height: 1.5;
 }
 
-.card {
+.header .card {
   width: 50%;
 }
 
-.card-title {
+.header .card-title {
   color: #5b5b5b;
   margin-bottom: 4px;
   position: relative;
   padding-bottom: 8px;
 }
 
-.card-title::after {
+.header .card-title::after {
   content: "";
   width: 30px;
   height: 2px;
@@ -94,11 +94,11 @@
     flex-wrap: wrap;
   }
 
-  .card {
+  .header .card {
     width: 100%;
   }
 
-  .card-body {
+  .header .card-body {
     padding: 20px;
   }
 }
