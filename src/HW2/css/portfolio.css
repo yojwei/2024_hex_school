@@ -168,6 +168,11 @@
   font-weight: 400;
 }
 
+.paginator:hover {
+  background: #c1c1c1;
+  color: white;
+}
+
 .page .active {
   color: white;
   background-color: black;
