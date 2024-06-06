@@ -120,12 +120,16 @@ li:hover a {
     display: block;
     position: absolute;
     width: 100%;
-    top: 96px;
+    top: 47px;
     text-align: center;
   }
 
   .header {
     display: flex;
     justify-content: space-between;
+  }
+
+  .header-toggle {
+    margin-bottom: 160px;
   }
 }
