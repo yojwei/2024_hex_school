@@ -276,4 +276,19 @@
     color: white;
     background-color: black;
   }
+
+  .footer {
+    flex-wrap: wrap;
+    padding: 40px 12px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
 }
