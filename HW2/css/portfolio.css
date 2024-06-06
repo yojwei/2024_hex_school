@@ -1,0 +1,299 @@
+.title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fafafa;
+  padding: 80px;
+}
+
+.quote-left {
+  margin-right: auto;
+}
+
+.quote-right {
+  margin-left: auto;
+}
+
+.slogan {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.slogan-content {
+  width: 670px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slogan img {
+  width: 72px;
+  height: 72px;
+}
+
+.slogan p {
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 400;
+}
+
+.slogan-content p:nth-child(odd) {
+  padding-bottom: 40px;
+}
+
+.underline {
+  position: relative;
+  margin-left: -8px;
+}
+
+.underline-1::after {
+  position: absolute;
+  content: "";
+  width: 148px;
+  height: 8px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true");
+  left: 0;
+  bottom: 0;
+}
+
+.title-content {
+  width: 636px;
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
+}
+
+.header .card {
+  width: 50%;
+}
+
+.header .card-title {
+  color: #5b5b5b;
+  margin-bottom: 4px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.header .card-title::after {
+  content: "";
+  width: 30px;
+  height: 2px;
+  top: 30px;
+  left: calc(100% / 2 - 15px);
+  background-color: #c1c1c1;
+  position: absolute;
+}
+
+.content {
+  padding: 80px;
+}
+
+.content img {
+  width: 636px;
+  height: 400px;
+}
+
+.content .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.content .card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.content .card-title {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content .card-body {
+  margin-top: 16px;
+  text-align: left;
+}
+
+.content .subtitle {
+  font-size: 28px;
+  line-height: 33.6px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.content .description {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #919191;
+}
+
+.content .hashtag {
+  display: flex;
+  gap: 10px;
+}
+
+.content .tag {
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3b3b3b;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.paginator {
+  width: 40px;
+  height: 40px;
+  padding: 2px 13px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+.paginator:hover {
+  background: #c1c1c1;
+  color: white;
+}
+
+.page .active {
+  color: white;
+  background-color: black;
+}
+
+.footer {
+  display: flex;
+  padding: 80px 312px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+}
+
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.email {
+  margin-top: 20px;
+}
+
+.contact {
+  width: 686px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn {
+  display: flex;
+  width: 306px;
+  padding: 8px 24px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #c1c1c1;
+}
+
+.btn > p > i {
+  width: 56px;
+  line-height: 56px;
+}
+
+.btn p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.btn.active {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .title-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header .card {
+    width: 100%;
+  }
+
+  .header .card-body {
+    padding: 20px;
+  }
+
+  .content img {
+    width: 351px;
+    height: 224px;
+  }
+
+  .content .subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .page {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .paginator {
+    width: 40px;
+    height: 40px;
+    padding: 2px 13px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    font-weight: 400;
+  }
+
+  .page .active {
+    color: white;
+    background-color: black;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    padding: 40px 12px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
