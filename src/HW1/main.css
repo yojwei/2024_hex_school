@@ -19,7 +19,6 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   gap: 80px 24px;
-  margin-bottom: 80px;
 }
 
 .card {
