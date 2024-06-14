@@ -29,7 +29,7 @@ img {
   padding: 0 12px;
 }
 
-.header {
+.header-content {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -114,8 +114,14 @@ li:hover a {
 }
 
 @media (max-width: 768px) {
-  .header {
+  .container {
+    width: 100%;
+  }
+
+  .header-content {
     padding: 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .navbar-btn {
@@ -136,11 +142,6 @@ li:hover a {
     width: 100%;
     top: 47px;
     text-align: center;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
   }
 
   .header-toggle {
