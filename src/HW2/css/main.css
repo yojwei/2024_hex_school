@@ -7,12 +7,26 @@
   box-sizing: border-box;
 }
 
+/* 預設 */
 body {
-  font-family: Noto Sans;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
+/* img reset */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* 滿版使用 */
 .container {
-  max-width: 1920px;
+  width: 1296px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
 
 .header {
