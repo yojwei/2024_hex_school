@@ -1,4 +1,4 @@
-.title {
+.banner-bg {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -88,47 +88,44 @@
   position: absolute;
 }
 
+main.container {
+  padding: 120px 12px;
+}
+
 .content {
-  padding: 80px;
-}
-
-.content img {
-  width: 636px;
-  height: 400px;
-}
-
-.content .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  margin-bottom: 80px;
+  gap: 80px 24px;
+  margin-bottom: 72px;
 }
 
-.content .card {
-  text-align: center;
+.content > li {
+  width: calc(50% - 12px);
+}
+
+.card {
   display: flex;
   flex-direction: column;
 }
 
-.content .card-title {
+.card-title {
   border-radius: 8px;
   overflow: hidden;
 }
 
-.content .card-body {
+.card-body {
   margin-top: 16px;
-  text-align: left;
 }
 
-.content .subtitle {
+.subtitle {
   font-size: 28px;
   line-height: 33.6px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-.content .description {
+.description {
   margin-bottom: 24px;
   font-weight: 400;
   font-size: 16px;
@@ -136,12 +133,12 @@
   color: #919191;
 }
 
-.content .hashtag {
+.hashtag {
   display: flex;
   gap: 10px;
 }
 
-.content .tag {
+.tag {
   background-color: #f1f1f1;
   border-radius: 16px;
   padding: 4px 12px;
@@ -178,7 +175,7 @@
   background-color: black;
 }
 
-.footer {
+footer {
   display: flex;
   padding: 80px;
   font-size: 20px;
@@ -187,7 +184,7 @@
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
 }
 
-.footer .logo {
+footer .logo {
   margin-bottom: 20px;
 }
 
@@ -248,16 +245,15 @@
     padding: 20px;
   }
 
-  .content img {
-    width: 351px;
-    height: 224px;
-  }
-
-  .content .subtitle {
+  .subtitle {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     margin-bottom: 8px;
+  }
+
+  .content > li {
+    width: 100%;
   }
 
   .page {
@@ -282,7 +278,7 @@
     background-color: black;
   }
 
-  .footer {
+  footer {
     flex-wrap: wrap;
     padding: 40px 12px;
     display: flex;
